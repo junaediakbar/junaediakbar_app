@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:junaediakbar_app/app/config/app_colors.dart';
 
 Widget navbar(ResponsiveScreen screen) {
   return Container(
     height: screen.height * 0.10,
-    decoration: BoxDecoration(
-      color: Colors.blueGrey.shade900,
-    ),
-    padding: EdgeInsets.symmetric(
-      vertical: 12.0,
-      horizontal: screen.width * 12 / 100,
+    decoration: BoxDecoration(color: AppColors.bluePrimary),
+    padding: EdgeInsets.only(
+      top: 12.0,
+      left: screen.width * 12 / 100,
+      right: screen.width * 12 / 100,
     ),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,

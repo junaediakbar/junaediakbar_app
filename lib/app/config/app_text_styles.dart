@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:junaediakbar_app/app/config/app_colors.dart';
 
 class AppTextStyles {
   static TextStyle title = TextStyle(
@@ -32,6 +33,14 @@ class AppTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w300,
     color: Colors.black,
+    fontFamily: GoogleFonts.roboto().fontFamily,
+  );
+
+  static TextStyle tabTitle = TextStyle(
+    fontSize: 16,
+    letterSpacing: 2.5,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
     fontFamily: GoogleFonts.roboto().fontFamily,
   );
 
